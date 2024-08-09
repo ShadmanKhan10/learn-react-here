@@ -1,53 +1,24 @@
-// import React, { useState } from "react";
-
-// export default function Practice1() {
-//   const [stop, setStop] = useState(false);
-
-//   const time = setInterval(() => {
-
-//     console.log("this is me");
-//     console.log("Current Status:", stop);
-//     if (stop) {
-//         clearInterval(time);
-//       }
-//   }, 1000);
-
-//   const handleClick = () => {
-//     setStop(true);
-//   };
-//   return (
-//     <div>
-//       <h1>Practicing one</h1>
-//       <button onClick={handleClick}>Stop</button>
-//     </div>
-//   );
-// }
-
 import React, { useState, useEffect } from "react";
 
 export default function Practice1() {
+  const [clock, setClock] = useState(0);
   const [stop, setStop] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("this is me");
-      console.log("Current Status:", stop);
-      if (stop) {
-        clearInterval(interval); // Stops the interval when 'stop' is true
-      }
+      setClock((prevClock) => prevClock + 1);
     }, 1000);
+    if (clock === 20) {
+      setStop(true);
+      clearInterval(interval);
+    }
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [stop]); // Dependency array ensures the interval is cleared when 'stop' changes
-
-  const handleClick = () => {
-    setStop(true); // Triggers the interval to stop
-  };
+    return () => clearInterval(interval);
+  }, [stop]);
 
   return (
     <div>
-      <h1>Practicing one</h1>
-      <button onClick={handleClick}>Stop</button>
+      <h1>{clock}</h1>
     </div>
   );
 }
