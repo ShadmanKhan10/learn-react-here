@@ -7,11 +7,11 @@ export default function Navbar() {
       <div className="nav-container">
         <div className="logo-container">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/60/60736.png"
+            src="https://cdn.vectorstock.com/i/1000x1000/33/68/joystick-vector-36433368.webp"
             className="logo"
             alt="logo"
           />
-          <h1 className="logo-name">LogoName</h1>
+          <h1 className="logo-name">Spoter</h1>
         </div>
         <div className="menu-lists">
           <div className="menu">Home</div>

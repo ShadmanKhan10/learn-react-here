@@ -4,3 +4,18 @@
 body {
   margin: 0;
 }
+
+@font-face {
+  font-family: "Venite Adoremus Straight";
+  src: url("./assets/VeniteAdoremusStraight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DRAGON HUNTER";
+  src: url("DRAGONHUNTER.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
