@@ -22,6 +22,13 @@ export default function Navbar() {
           <span className="join-span">Join</span>
         </div>
       </div>
+      <div>
+        <img
+          src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png"
+          className="menu-icon"
+          alt="menu"
+        />
+      </div>
     </div>
   );
 }

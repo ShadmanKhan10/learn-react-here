@@ -20,6 +20,7 @@ export default function Home() {
           src="https://www.pngall.com/wp-content/uploads/4/Ronaldo-FIFA-PNG-Image.png"
           className="home-image"
           alt="image"
+          loading="lazy"
         />
       </div>
     </div>
