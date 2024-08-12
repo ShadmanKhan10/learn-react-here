@@ -16,7 +16,7 @@
   flex-direction: column;
   /* border: 2px solid black; */
   height: 100%;
-  width: 70%;
+  width: 60%;
 }
 .heading {
   font-family: "Venite Adoremus Straight";
@@ -55,11 +55,43 @@
 .image-container {
   /* border: 2px solid green; */
   height: 100%;
-  width: 30%;
+  width: 40%;
 }
 .home-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
   /* background-color: green; */
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    margin-top: 50px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: linear-gradient(rgb(245, 97, 97), rgb(250, 250, 53));
+  }
+  .content-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36%;
+  }
+  .image-container {
+    /* border: 2px solid green; */
+    width: 83%;
+    height: 64%;
+  }
+  .sports-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-left: 4vw;
+  }
 }

@@ -12,6 +12,7 @@ export default function Home() {
           <span className="sport">Cricket</span>
           <span className="sport">Badminton</span>
           <span className="sport">Console Games</span>
+          <span className="sport">More</span>
         </div>
       </div>
       <div className="image-container">
