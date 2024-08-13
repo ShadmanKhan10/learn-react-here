@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const [clicked, setClicked] = useState(false);
+
+  const handleMenuClick = () => {
+    setClicked((prev) => {
+      return prev === true ? false : true;
+    });
+  };
   return (
     <div>
       <div className="nav-container">
@@ -27,8 +34,21 @@ export default function Navbar() {
           src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png"
           className="menu-icon"
           alt="menu"
+          onClick={handleMenuClick}
         />
       </div>
+      {clicked ? (
+        <div className="ham-menu-list">
+          <div className="ham-menu">Home</div>
+          <div className="ham-menu">AboutUs</div>
+          <div className="ham-menu">Services</div>
+          <div className="ham-menu">Items</div>
+          <div className="ham-menu">Login</div>
+          <span className="span-ham-menu">Join</span>
+        </div>
+      ) : (
+        <h1></h1>
+      )}
     </div>
   );
 }
