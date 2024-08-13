@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import Login from "./Login";
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
+  const [opacity, setOpacity] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   const handleMenuClick = () => {
     setClicked((prev) => {
       return prev === true ? false : true;
     });
+  };
+
+  const onLoginClick = () => {
+    setOpacity(true);
+    setShowLogin(true);
+    console.log("Opacity Status", opacity);
+    console.log("Login Status", showLogin);
   };
   return (
     <div>
@@ -25,7 +35,9 @@ export default function Navbar() {
           <div className="menu">AboutUs</div>
           <div className="menu">Items</div>
           <div className="menu">Services</div>
-          <div className="menu">Login</div>
+          <div onClick={onLoginClick} className="menu">
+            Login
+          </div>
           <span className="join-span">Join</span>
         </div>
       </div>
@@ -43,12 +55,15 @@ export default function Navbar() {
           <div className="ham-menu">AboutUs</div>
           <div className="ham-menu">Services</div>
           <div className="ham-menu">Items</div>
-          <div className="ham-menu">Login</div>
+          <div onClick={onLoginClick} className="ham-menu">
+            Login
+          </div>
           <span className="span-ham-menu">Join</span>
         </div>
       ) : (
         <h1></h1>
       )}
+      {showLogin && <Login />}
     </div>
   );
 }

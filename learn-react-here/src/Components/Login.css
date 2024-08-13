@@ -1,0 +1,105 @@
+.login-container-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid purple;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.login-container {
+  border: none;
+  border-radius: 1vw;
+  min-height: 37%;
+  width: 50%;
+  position: fixed;
+  top: 40vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(rgb(245, 97, 97), rgb(250, 250, 53));
+  animation: createBox 1s;
+}
+
+@keyframes createBox {
+  from {
+    transform: translateX(-50%) scale(0);
+  }
+  to {
+    transform: translateX(-50%) scale(0.5);
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-label {
+  text-align: center;
+  font-family: "Venite Adoremus Straight";
+}
+.login-input {
+  width: 80%;
+  height: 3vw;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  font-family: "Venite Adoremus Straight";
+}
+.login-password {
+  width: 80%;
+  height: 3vw;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+  border: 2px solid white;
+  outline: none;
+  background: transparent;
+  font-family: "Venite Adoremus Straight";
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+}
+
+.submit-btn {
+  min-width: 10vw;
+  min-height: 2vw;
+  margin-bottom: 0.3vw;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Venite Adoremus Straight";
+  border-radius: 1vw;
+  cursor: pointer;
+}
+.register-link {
+  font-family: "Venite Adoremus Straight";
+  margin-top: 0.5vw;
+  font-size: 1vw;
+}
+.close {
+  /* border: 2px solid black; */
+  font-family: "Venite Adoremus Straight";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.9vw;
+  height: 3vw;
+  width: 4vw;
+  background-color: rgb(221, 0, 0);
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5vw;
+}
