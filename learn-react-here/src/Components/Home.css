@@ -84,6 +84,7 @@
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column-reverse;
+    /* justify-content: center; */
     justify-content: center;
     height: 100%;
     background-image: linear-gradient(rgb(245, 97, 97), rgb(250, 250, 53));
@@ -108,8 +109,10 @@
   }
   .image-container {
     /* border: 2px solid green; */
-    min-width: 83%;
-    height: 64%;
+    /* min-width: 83%;
+    height: 64%; */
+    min-width: 90%;
+    height: 74%;
   }
   .sports-container {
     display: flex;
