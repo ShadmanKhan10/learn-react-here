@@ -41,6 +41,24 @@
   align-items: center;
   margin-right: 2vw;
 }
+
+.menu-lists-true {
+  /* border: 2px solid red; */
+  background-color: bisque;
+  /* padding: 2vw; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  margin-right: 2vw;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
 .menu {
   margin-left: 1vw;
   cursor: pointer;
@@ -114,7 +132,8 @@
 
 @media (max-width: 1100px) {
   .menu-lists {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
   }
   /* .ham-menu-list {
     display: none;
@@ -122,4 +141,7 @@
   .menu-icon {
     visibility: visible;
   }
+  /* .menu-list-true {
+    display: flex;
+  } */
 }
