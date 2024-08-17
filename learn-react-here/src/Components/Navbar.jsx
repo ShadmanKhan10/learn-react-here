@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { AnimatePresence, motion } from "framer-motion";
 import Login from "./Login";
 
 export default function Navbar() {
@@ -59,7 +58,6 @@ export default function Navbar() {
           onClick={handleMenuClick}
         />
       </div>
-
       {showLogin && <Login />}
     </div>
   );
